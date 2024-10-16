@@ -230,15 +230,17 @@
 
 }
 
-.cart-button > button > span{
-    margin-right: 5px;
+ span{
+    margin-right: 10px;
 }
 .text-style{
     text-decoration: none;
     color: #fff;
 }
-
-.cart-button > button{
+a:hover{
+    cursor: pointer;
+}
+a{
     background-color: #FF8B07;
     width: 35%;
     padding: 17px;
@@ -247,6 +249,7 @@
     color: white;
     font-size: 17px;
 }
+
 /* Bottom gallery section */
 .bottom-gallery-section{
     width: 80vw;
