@@ -68,7 +68,7 @@ h2{
 .bank,
 .menu {
 
-    /* padding: 20px 30px; */
+    padding: 20px 30px;
     height: 80%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 10px;
@@ -78,7 +78,7 @@ h2{
 }
 
 .card {
-    /* padding: 20px 30px; */
+    padding: 20px 30px;
     color: orange;
     height: 80%;
     border: 1px solid orange;
