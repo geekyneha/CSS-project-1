@@ -233,6 +233,10 @@
 .cart-button > button > span{
     margin-right: 5px;
 }
+.cart-button > button > span > a{
+    text-decoration: none;
+    color: #fff;
+}
 .cart-button > button{
     background-color: #FF8B07;
     width: 35%;
