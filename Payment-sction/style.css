@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Layout */
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    
+}
+
+/* Left container */
+.left-container {
+    background-color: #fff;
+    width: 50vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+label{
+    font-size: 17px;
+    
+}
+/* inner-container */
+.checkout {
+    width: 60%;
+    height: 80%;
+    line-height: 1.9;
+}
+.sub-heading{
+    color: #bababa;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+h2{
+    margin: 20px 0;
+}
+.email > input,.card-number > input{
+    min-width: 100%;
+    border-radius: 10px;
+    background-color: #F6F8F9;
+    color: grey;
+    padding: 15px 15px;
+    border: none;
+}
+
+.payment-options {
+    display: flex;
+    width: 100%;
+    min-height: 12vh;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.crypto,
+.bank,
+.menu {
+
+    /* padding: 20px 30px; */
+    height: 80%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    border: 1px solid rgb(195, 192, 192);
+    color: gray;
+
+}
+
+.card {
+    /* padding: 20px 30px; */
+    color: orange;
+    height: 80%;
+    border: 1px solid orange;
+    box-shadow: rgba(165, 159, 149, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+}
+.expiry-and-cvc , .country-and-zip{
+    display: flex;
+    min-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    
+}
+.expiry >input , .cvc >input ,.country > input , .zip > input{
+   min-width: 100%;
+    background: #F6F8F9;
+    border-radius: 10px;
+   border: none;
+    color: grey;
+    padding: 15px 20px;
+    
+}
+
+/* Right container */
+.right-container {
+    background-color: #fff;
+    min-width: 50vw;
+    height: 100vh;
+    background: #F6F8F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.order-summery{
+    min-height: 80vh;
+    
+}
+
+.order-summery > h2{
+    text-align: center;
+}
+.pay{
+    min-width: 20vw;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+
+
+}
+.coupon-code-apply{
+    min-width:100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+.coupon-input > input{
+    padding: 15px 18px;
+   
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid grey;
+    
+}
+.coupon-button{
+   margin-left: 4px;
+    padding: 15px 18px;
+    border-radius: 10px;
+    background: #2378FF;
+    color: #fff;
+    border: none;
+}
+.subtotal,.taxes,.discount{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: gray;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+   
+}
+.pay-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pay-button > button{
+    color: #fff;
+    width: 100%;
+    padding: 20px 60px;
+    font-size: 19px;
+    border: none;
+    border-radius: 15px;
+    background-color: #FFA239;
+    margin-top: 20px;
+}
+.pay-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    mix-blend-mode: multiply;
+}
+@media (max-width:900px) {
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px
+
+    };
+    .left-container{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        
+   
+    }
+    .right-container{
+        min-width: 100vw;
+    }
+   
+    .pay{
+        min-width: 40vw;
+    }
+    .expiry-and-cvc , .country-and-zip{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:800px) {
+    .checkout{
+        min-width: 80vw;
+    }
+    
+}
+
