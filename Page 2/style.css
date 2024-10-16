@@ -233,7 +233,7 @@
 .cart-button > button > span{
     margin-right: 5px;
 }
-.cart-button > button > span > a{
+ a { 
     text-decoration: none;
     color: #fff;
 }
